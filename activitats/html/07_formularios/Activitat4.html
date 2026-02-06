@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Buscar camara</h1>
+
+    <form action="#">
+        <label for="search">Palabra clave (marca)</label>
+        <br/>
+        <input type="search" name="search">
+        <br/><br/>
+        <label for="brand">Marca:</label>
+        <br/>
+        <select name="brand" id="">
+            <option value="all">Todas las marcas</option>
+            <option value="fujifilm">Fujifilm</option>
+            <option value="panasonic">Panasonic</option>
+            <option value="sony">Sony</option>
+            <option value="olympus">Olympus</option>
+        </select>
+        <br/><br/>
+        <p>Tipo de sensor:</p>
+        <br/>
+        <input type="radio" name="fullframe">
+        <label for="fullframe">Fullframe</label>
+        <br>
+        <input type="radio" name="apsc">
+        <label for="apsc">APS-C</label>
+        <br>
+        <input type="radio" name="m43">
+        <label for="m43">Micro Cuatro Tercios</label>
+        <br/><br/>
+        <label for="megapixels">Resolucion minima (Megapixeles):</label>
+        <br>
+        <input type="number" name="mp" min="12" max="100">
+        <br/><br/>
+        <label for="price">Precio</label>
+        <input type="range" name="price" min="500" max="5000">
+        <br/><br/>
+        <input type="checkbox" name="video4k">
+        <label for="video4k">Solo modelos con grabacion 4k</label>
+        <br/><br/>
+        <button type="submit">Buscar</button>
+    </form>
+</body>
+</html>
