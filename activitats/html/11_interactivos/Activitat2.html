@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="search">
+
+        <label for="marcas">Marca:
+            <input list="marcas" type="text" name="marca">
+        </label>
+
+        <datalist id="marcas">
+            <option value="Apple"></option>
+            <option value="Huawei"></option>
+            <option value="Xiaomi"></option>
+            <option value="Samsung"></option>
+            <option value="Honor"></option>
+        </datalist>
+
+        <br/><br/>
+
+        <label for="precios">Rango de precios</label>
+        <select name="precios" id="">
+            <option value="bajo">Económico (0€ - 199€)</option>
+            <option value="medio">Gama Media (200€ - 600€)</option>
+            <option value="alto">Gama Alta (+600€)</option>
+        </select>
+
+        <br/><br/>
+
+        <button type="submit">Buscar</button>
+    </form>
+</body>
+
+</html>
