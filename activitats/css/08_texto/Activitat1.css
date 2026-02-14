@@ -1,0 +1,26 @@
+body {
+    max-width: 600px;
+    margin: 40px auto;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 300;
+    color: #666;
+}
+
+h3 {
+    font-style: italic;
+    font-weight: normal;
+    border-bottom: 1px solid #ccc;
+}
+
+p {
+    font-size: 18px;
+}
