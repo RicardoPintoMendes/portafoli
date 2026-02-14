@@ -1,0 +1,29 @@
+body {
+    max-width: 600px;
+    margin: 40px auto;
+    line-height: 1.6;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 10px; 
+}
+
+.author {
+    font-size: 20px;
+    word-spacing: 15px;
+    color: #666;
+}
+
+.chapter {
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: normal;
+    margin-top: 40px;
+}
+
+.content {
+    text-align: justify;
+    line-height: 1.8;
+}
