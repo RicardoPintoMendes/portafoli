@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "KH-epic";
+    src: url("./fonts/Cinzel-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "KH-body";
+    src: url("./fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+body {
+    background-color: #151e34;
+    color: white;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ffd900;
+}
+
+
+.title {
+    font-family: "KH-epic";
+    font-size: 50px;
+    color: #ffd900;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: "KH-body";
+    font-size: 22px;
+    color: #8aacc8;
+    text-align: center;
+}
+
+h2 {
+    font-family: "KH-epic";
+    font-size: 25px;
+    color: #ffd900;
+}
+
+.stats-list {
+    font-family: "KH-body";
+    font-size: 18px;
+    list-style: none;
+}
+
+.body-text {
+    font-family: "KH-body";
+    font-size: 18px;
+    text-align: justify;
+}
+
+.footer {
+    font-family: "KH-body";
+    font-size: 16px;
+    text-align: center;
+}
+
+.golden {
+    color: #ffd900;
+}
