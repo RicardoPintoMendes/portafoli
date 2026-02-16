@@ -1,0 +1,23 @@
+p {
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    margin: 0px;
+    margin-left: auto;
+}
+
+.first {
+    width: 90%;
+}
+
+.second {
+    width: 70%;
+}
+
+.third {
+    width: 50%;
+}
+
+.fourth {
+    width: 30%;
+}

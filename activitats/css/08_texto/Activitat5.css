@@ -1,0 +1,7 @@
+.upper{
+    text-transform: uppercase;
+}
+
+.upper span{
+    background-color: yellow;
+}
