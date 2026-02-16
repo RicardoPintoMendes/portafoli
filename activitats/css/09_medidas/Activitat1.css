@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    font-size: 20px;
+    color: gray;
+    margin-top: 0;
+}
+
+.foto {
+    width: 60%;
+    display: block;
+}
+
+.detalles {
+    font-size: 14px;
+    color: #666;
+    margin: 2px 0;
+}
+
+.precio {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+}
