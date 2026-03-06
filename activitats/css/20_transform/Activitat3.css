@@ -1,0 +1,21 @@
+.circulo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    transition: transform 0.5s;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.azul {
+    background-color: rgba(0, 0, 255, 0.5);
+    margin-left: 20px;
+}
+
+.azul:hover {
+    transform: translateX(-110px);
+}
