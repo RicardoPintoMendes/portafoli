@@ -1,0 +1,317 @@
+/* =========================================
+   1. VARIABLES DE COLOR (Paleta Blava)
+   ========================================= */
+:root {
+    --blau-fosc: #003366;       /* Per a la capçalera i fons del menú */
+    --blau-mitja: #00509E;      /* Per a botons i elements destacats */
+    --blau-clar: #4DA1FF;       /* Per a detalls i estats "hover" */
+    --blau-molt-clar: #e6f2ff;  /* Fons suau per a les taules */
+    --fons-clar: #F4F8FB;       /* Fons general de tota la web */
+    --text-fosc: #333333;       /* Color del text principal */
+    --blanc: #FFFFFF;
+}
+
+/* =========================================
+   2. ESTILS GLOBALS
+   ========================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--fons-clar);
+    color: var(--text-fosc);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--blau-mitja);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--blau-fosc);
+    text-decoration: underline;
+}
+
+/* =========================================
+   3. CAPÇALERA I PEU DE PÀGINA
+   ========================================= */
+.capcalera {
+    background-color: var(--blau-fosc);
+    color: var(--blanc);
+    text-align: center;
+    padding: 3.5rem 1rem 4.5rem 1rem; /* Més espai a sota per encavalcar el contingut */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.capcalera h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.capcalera h2 {
+    font-weight: 300;
+    color: var(--blau-clar);
+}
+
+.peu-pagina {
+    background-color: var(--blau-fosc);
+    color: var(--blanc);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 50px;
+}
+
+.xarxes-socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+/* =========================================
+   4. MENÚ LATERAL DESPLEGABLE
+   ========================================= */
+.interruptor-menu {
+    display: none;
+}
+
+.etiqueta-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: var(--blau-mitja);
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+}
+
+.etiqueta-menu:hover {
+    background-color: var(--blau-fosc);
+}
+
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 280px;
+    height: 100%;
+    background-color: var(--blau-fosc);
+    transition: left 0.4s ease;
+    z-index: 999;
+    padding-top: 90px;
+    box-shadow: 2px 0 15px rgba(0,0,0,0.5);
+}
+
+.menu-lateral ul {
+    list-style: none;
+}
+
+.menu-lateral ul li a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 25px;
+    color: var(--blanc);
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    transition: background-color 0.2s, padding-left 0.2s;
+}
+
+.menu-lateral ul li a:hover {
+    background-color: var(--blau-mitja);
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.interruptor-menu:checked ~ .menu-lateral {
+    left: 0;
+}
+
+/* =========================================
+   5. FILTRES PER A LES ICONES SVG
+   ========================================= */
+.icona-hamburguesa {
+    width: 32px;
+    height: 32px;
+    filter: invert(100%);
+    display: block;
+}
+
+.icona-menu {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%);
+}
+
+.icona-xarxa {
+    width: 28px;
+    height: 28px;
+    filter: invert(100%);
+    transition: transform 0.3s;
+}
+
+.icona-xarxa:hover {
+    transform: scale(1.2); /* Les xarxes es fan grans en passar el ratolí */
+}
+
+/* =========================================
+   6. CONTINGUT PRINCIPAL I CAIXES
+   ========================================= */
+.contingut-principal {
+    max-width: 900px;
+    margin: -40px auto 40px auto; /* Puja la capsa perquè es superposi a la capçalera */
+    padding: 40px;
+    background-color: var(--blanc);
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    position: relative; 
+    z-index: 10;
+}
+
+h3 {
+    color: var(--blau-fosc);
+    margin-bottom: 15px;
+    border-bottom: 3px solid var(--blau-clar);
+    padding-bottom: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* =========================================
+   7. SECCIÓ: INICI (index.html)
+   ========================================= */
+.presentacio {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.imatge-perfil {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--blau-mitja);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.taula-habilitats {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.taula-habilitats th, .taula-habilitats td {
+    border: 1px solid var(--blau-molt-clar);
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.taula-habilitats th {
+    background-color: var(--blau-mitja);
+    color: var(--blanc);
+}
+
+/* Files parelles de la taula amb un color diferent per llegir millor */
+.taula-habilitats tbody tr:nth-child(even) {
+    background-color: var(--blau-molt-clar);
+}
+
+/* =========================================
+   8. SECCIÓ: FORMULARI DE CONTACTE
+   ========================================= */
+.formulari-contacte {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.grup-formulari {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.grup-formulari label {
+    font-weight: bold;
+    color: var(--blau-fosc);
+}
+
+.grup-formulari input,
+.grup-formulari textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.grup-formulari input:focus,
+.grup-formulari textarea:focus {
+    border-color: var(--blau-clar);
+    outline: none;
+    box-shadow: 0 0 5px rgba(77, 161, 255, 0.4);
+}
+
+.boto-enviar {
+    background-color: var(--blau-mitja);
+    color: var(--blanc);
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 10px;
+}
+
+.boto-enviar:hover {
+    background-color: var(--blau-fosc);
+}
+
+.boto-enviar:active {
+    transform: scale(0.98);
+}
+
+/* =========================================
+   9. SECCIÓ: ACTIVITATS
+   ========================================= */
+.llista-activitats ul {
+    list-style-type: square;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: var(--blau-mitja);
+}
+
+.llista-activitats li {
+    margin-bottom: 8px;
+}
+
+.boto-tornar {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: var(--blau-molt-clar);
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid var(--blau-clar);
+}
+
+.boto-tornar:hover {
+    background-color: var(--blau-clar);
+    color: var(--blanc);
+    text-decoration: none;
+}
