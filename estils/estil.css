@@ -370,3 +370,47 @@ h3 {
     color: var(--blau-clar);
     margin-right: 8px;
 }
+
+/* =========================================
+   11. PÀGINA D'ESBOSSOS
+   ========================================= */
+.caixa-esbos {
+    margin-top: 30px;
+    text-align: center;
+    background-color: var(--fons-clar);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.caixa-esbos h4 {
+    color: var(--blau-fosc);
+    margin-bottom: 15px;
+}
+
+.imatge-esbos {
+    max-width: 100%;
+    border: 2px solid var(--blau-mitja);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   12. PÀGINA D'ACTIVITATS (Botons grans)
+   ========================================= */
+.llista-botons-activitats {
+    padding: 0;
+    margin-top: 30px;
+}
+
+.llista-botons-activitats li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.boto-activitat-gran {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 20px;
+}
