@@ -1,0 +1,13 @@
+.contenedor-monstruo {
+    border: 15px solid;
+    border-image: linear-gradient(to bottom, #00ffff, #ff0000) 1;
+    padding: 20px;
+    background-color: white;
+    display: inline-block;
+}
+
+.monstruo {
+    display: block;
+    width: 300px;
+    height: auto;
+}

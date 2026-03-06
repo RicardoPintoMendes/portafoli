@@ -1,0 +1,17 @@
+contenedor-tabla {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    white-space: nowrap;
+}

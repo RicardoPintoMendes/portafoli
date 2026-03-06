@@ -1,0 +1,28 @@
+ul {
+    list-style: none;
+    padding: 0;
+    width: 250px;
+    border: 4px solid black;
+}
+
+li {
+    border-bottom: 4px solid black;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #6a9197;
+    color: white;
+    font-size: 30px;
+}
+
+a:hover {
+    background-color: #4a6d72;
+}

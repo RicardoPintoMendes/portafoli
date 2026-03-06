@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    color: #333;
+}
+
+.explicacion {
+    height: 10rem;
+    overflow-y: scroll;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}

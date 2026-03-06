@@ -1,0 +1,14 @@
+.contenedor-monstruo {
+    border: 15px solid #ffa500;
+    border-left: 15px dashed #ffa500;
+    border-right: 15px dashed #ffa500;
+    padding: 20px; 
+    background-color: white;
+    display: inline-block;
+}
+
+.monstruo {
+    display: block;
+    width: 300px;
+    height: auto;
+}

@@ -1,0 +1,61 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    color: #333;
+}
+
+.contenedor {
+    max-width: 600px;
+}
+
+.banner-info {
+    background-color: #e4f0ec;
+    padding: 20px 25px;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.banner-info u {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 0.9;
+    margin: 0 0 30px 0;
+    color: #222;
+    text-transform: lowercase;
+}
+
+.descripcion {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #555;
+    max-width: 450px;
+    margin-bottom: 40px;
+}
+
+.boton-registro {
+    display: inline-block;
+    padding: 12px 35px;
+    border: 1px solid #999;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    font-size: 11px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.boton-registro:hover {
+    background-color: #f2f0f0;
+    border-color: #333;
+}

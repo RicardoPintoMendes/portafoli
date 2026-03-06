@@ -1,0 +1,30 @@
+.cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: #333;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    opacity: 0;
+    animation: aparecer 1s ease-out 3s forwards;
+}
+
+button {
+    background: #ffeb3b;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}

@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+    margin: 0;
+}
+
+.contenedor-3d {
+    perspective: 1000px;
+}
+
+img {
+    width: 300px;
+    transition: transform 0.5s;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.contenedor-3d:hover img {
+    transform: rotateY(20deg) rotateX(10deg);
+}

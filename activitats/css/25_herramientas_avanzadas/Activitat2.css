@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+    position: relative;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    bottom: calc(50% - 130px);
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #555;
+    z-index: -1;
+}
+
+.noria {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #333;
+    border-radius: 50%;
+    position: relative;
+    animation: girar 10s linear infinite;
+    background: white;
+}
+
+.cabina {
+    width: 30px;
+    height: 30px;
+    background: red;
+    position: absolute;
+    top: -15px;
+    left: 85px;
+    transform-origin: center 115px;
+    transform: rotate(calc(var(--i) * 45deg));
+}
+
+@keyframes girar {
+    to { transform: rotate(360deg); }
+}
